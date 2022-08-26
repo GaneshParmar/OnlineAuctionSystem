@@ -1,0 +1,84 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 18, 2022, 7:03:37 AM
+    Author     : Admin
+*/
+
+a{
+                text-decoration: none;
+            }
+            
+            
+            
+            .item_{
+                width: 90%;
+                min-width: 320px;
+                height: 200px;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: white;
+                padding: 0.5em !important;
+                float: left;
+                margin-left: 10px;
+                color: black;
+                z-index: 10;
+                background: #fff;
+            }
+            
+            .itemInfo{
+                width: 70%;
+            }
+            .itemImg{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .itemBrand{
+                font-size: 1.4em;
+                border-bottom: 1px solid #0cabba;
+            }
+            .feature{
+                font-size: 0.8em;
+                list-style-position:inside;
+                margin: 2px;
+                color: gray;
+            }
+            .itemSec2{
+                padding: 0.2em 0
+            }
+            span{
+                color: #484848;
+                font-size: 0.6em;
+            }
+            
+            .itemPrice{
+                font-size: 1.5em;
+                color: red;
+            }
+            
+            @media (max-width:450px){
+                .item_{
+                    /*display: flex*/
+                   /*width: fit-content;*/
+                   /*height: 280px;*/
+                   min-width: 300px;
+                   font-size: 14px;
+                   /*flex-direction: column-reverse;*/
+                }
+            }
+            @media (max-width:350px){
+                .item_{
+                    /*display: flex*/
+                   /*width: fit-content;*/
+                   /*height: 280px;*/
+                   min-width: 250px;
+                   font-size: 16px;
+                   flex-direction: column-reverse;
+                }
+            }

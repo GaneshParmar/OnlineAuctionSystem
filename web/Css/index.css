@@ -1,0 +1,497 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 20, 2022, 8:51:27 AM
+    Author     : Admin
+*/
+
+/*Color
+//#0cabba
+//#87d5dc --box shadow
+
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+#bigScreen{
+    display: flex;
+}
+
+#smallScreen{
+    display: none;
+}
+
+.smShow{
+    display: none;
+}
+/*body{
+    min-height: 100vh;
+    height: fit-content;
+    position: relative;
+}*/
+
+
+.text-center{
+    text-align: center !important;
+}
+
+nav{
+    padding: 1em;
+    background-color: #000;
+    color: #0cabba;
+    position: relative;
+    width: 100%;
+}
+
+.nav-wrap{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.nav-wrap>ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    max-width: 500px;
+}
+
+.nav-wrap>ul>li>a{
+    text-decoration: none;
+    color: #87d5dc;
+}
+
+.nav-wrap>ul>li>a.active{
+    border-bottom: 2px solid #0cabba;
+    color: #0cabba;
+}
+
+.nav-wrap>ul>li>a:hover{
+    border-bottom: 2px solid #0cabba;
+    color: #0cabba;
+}
+
+/*btn*/
+
+.btn{
+    background-color: white;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+}
+
+.btn>a{
+    color: #000 !important;
+}
+
+.btn>a:hover{
+    border: none;
+}
+
+/*Main content*/
+
+.title{
+    color: #484848 ;
+}
+
+.sec{
+    padding: 0.5em;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+.Wrap{
+    width: 100%;
+    max-width: 950px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+    margin: 0 auto;
+
+}
+
+/*scroll bar style 5*/
+.Wrap::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #87d5dc;
+    border-radius: 4px;
+}
+.Wrap::-webkit-scrollbar
+{
+    height: 5px;
+    background-color: #F5F5F5;
+    
+}
+.Wrap::-webkit-scrollbar-thumb
+{
+    background-color: #0cabba;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .2)),
+    color-stop(.5, transparent), to(transparent));
+    border-radius: 4px;
+
+}
+
+.CaroselWrap{
+    padding: 1em;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.homeNavWrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    
+}
+
+.homeNavigations{
+    display: flex;
+    flex-wrap: wrap;
+    padding:1em;
+    width: fit-content;
+    width: 100%;
+    max-width: 860px;
+}
+
+.navButton{
+    width: 250px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #0cabba;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 1.4em;
+}
+
+.navButton>h4{
+    height: 100%;
+    position: relative;
+    width: 50%;
+}
+
+.navButton>h4>span{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.4em;
+    color:#0cabba;
+
+}
+.owl-carousel{
+    padding: 0px;
+    position: relative;
+    background: #000;
+    padding: 0.5em 0;
+
+}
+
+.owl-nav{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    padding: 0 !important;
+    margin: 0px !important;
+    pointer-events: none;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+}
+.owl-nav>button{
+    /*position: absolute;*/
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0cabba2a !important;
+    color: white !important;
+    margin: 0px !important;
+    top: 0;
+    pointer-events: all;
+    border-radius: 50% !important;
+    background: #0cabba !important;
+}
+
+.owl-next{
+    right: 0;
+}
+
+.owl-prev{
+    left: 0;
+}
+
+/*.owl-dots{
+    position: absolute;
+}*/
+
+.owl-dot.active span{
+    background: #0cabba !important;
+}
+.owl-item > div {
+    pointer-events: auto !important;
+}
+
+footer{
+    background-color: #0cabba;
+    color: white;
+    padding: 1em;
+/*    position: absolute;
+    bottom: 0px;*/
+    width: 100%;
+}
+    
+.footer-wrap{
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 0;
+}
+    
+.footer-wrap>ul{
+    list-style: none;
+    border-right: 1px solid #fff;
+    width:20%;
+}
+
+.footer-wrap>ul>li{
+    line-height: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.footer-wrap>ul>li>a{
+    color: white;
+}
+
+.footer-wrap>.group{
+    line-height: 25px;
+    text-align: center;
+
+    display: block;
+    padding: 0 0.5em;
+}
+
+.address{
+    width:50%;
+    font-size: 15px;
+    padding: 0 1em;
+    border-left: 1px solid #fff;
+}
+
+.follow-links{
+    width: 50%;
+}
+
+.follow-links>span{
+    font-size: 0.7em;
+}
+
+.social-media-links{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.social-media-links>a{
+    display: block;
+    width: fit-content;
+}
+
+
+.social-media-links>a:hover>svg path{
+    fill: #000;
+}
+
+center{
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.homeNavigations>a{
+    margin: 10px;
+}
+
+@media (max-width:900px){
+    .footer-wrap{
+        flex-direction: column;
+        /*text-align: center;*/
+        justify-content: space-around;
+    }
+    .footer-wrap>*{
+        width: 100%;
+        border: none !important;
+        text-align: left !important;
+    }
+    .footer-wrap>ul{
+        justify-content: left;
+        width: 100% !important;
+        /*margin: 5px 0;*/
+        border-bottom: 1px solid #fff !important;
+        padding: 15px 0;
+    }
+    
+    .footer-wrap>ul>li{
+        width: 100%;
+    }
+    
+    .footer-wrap>.group{
+        /*margin: 5px 0;*/
+        border-bottom: 1px solid #fff !important;
+        padding: 15px 0;
+
+    }
+    
+    .address{
+        /*margin: 5px 0;*/ 
+        padding: 15px 0;
+
+    }
+
+    .follow-links{
+        width: 100%;
+    }
+
+    .follow-links>span{
+        font-size: 0.7em;
+    }
+
+    .social-media-links{
+        display: flex;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .social-media-links>a{
+        display: block;
+        width: fit-content;
+    }
+
+
+    .social-media-links>a:hover>svg path{
+        fill: #000;
+    }
+}
+
+@media (max-width:920px){
+    
+
+    .homeNavigations{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width:600px){
+   
+    .nav-wrap>ul>li>a.active{
+        border-bottom: none;
+        color: #0cabba;
+    }
+    #bigScreen{
+        display: none;
+    }
+    
+    .smShow{
+        display: flex;
+        align-items: center;
+    }
+    
+    .smShow>*{
+        margin-left: 10px; 
+    }
+    
+    #smallScreen{
+        position: absolute;
+        display: block;
+        line-height: 40px;
+        background: #000;
+        width: 100%;
+        max-width: 100%;
+        z-index: 9;
+        top: 61.6px;
+        left: -100%;
+        margin: 0;
+        padding: 0.5em;
+        transition: 0.4s ease-in-out;
+        /*bottom: -100%;*/
+    }
+    
+    #smallScreen.navshow{
+        left: 0% !important;
+    }
+    
+    #smallScreen>li{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #smallScreen>li>a{
+        display: block;
+    }
+    #smallScreen>.btn{
+        background: none;
+        padding: 0;
+        border-radius: 0;
+    }
+    #smallScreen>.btn>a{
+        display: inline;
+         background-color: white;
+         padding: 0.5em 1em;
+         border-radius: 20px;
+    }
+    
+    .owl-nav>button{
+        /*position: absolute;*/
+        width: 40px;
+        height: 40px;
+    }
+
+    /*btn*/
+
+
+}
+
+@media (max-width:400px){
+    
+    .homeNavigations{
+        display: flex;
+        flex-wrap: wrap;
+        padding:1em;
+        width: 100%;
+        max-width: 860px;
+    }
+
+    
+    .navButton{
+        max-width: 100%;
+        min-width: 300px;
+        height: 150px;
+        display: flex;
+        justify-content: space-around;
+        border: 2px solid #0cabba;
+        border-radius: 4px;
+        text-decoration: none;
+        padding: 1.4em;
+        margin: 10px;
+}
+
+
+    
+}
